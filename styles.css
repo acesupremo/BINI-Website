@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  color: white;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.flip-card {
+  width: 200px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card.flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+
+
+.about-bini-section {
+  background-color: transparent; 
+  padding: 5rem 0;
+  color: #f8f9fa;
+}
+
+.about-bini-section .text-block {
+  max-width: 600px;
+}
+
+.about-bini-section h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.about-bini-section h2 span {
+  color: #b133ff;
+}
+
+.about-bini-section p {
+  color: #dddddd;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.about-bini-section .img-glow-wrapper {
+  position: relative;
+}
+
+.about-bini-section .img-glow-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at center, #ffc6ff 0%, transparent 70%);
+  z-index: 0;
+}
+
+.about-bini-section img {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="vid/BINI-BG.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+  <nav class="navbar navbar-expand-lg rounded-pill shadow mx-auto mt-3 px-4" style="background-color: #00bcd4; max-width: 1000px; z-index: 2; position: relative;">
+    <div class="container-fluid align-items-center">
+      <a class="navbar-brand me-auto" href="#">
+        <img src="img/logo.webp" alt="Logo" style="height: 40px;">
+      </a>
+      <ul class="navbar-nav mx-auto d-flex flex-row gap-3 text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Music</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Video</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Events</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Article</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <a href="https://www.facebook.com/BINIph.official" class="text-white"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/bini_ph/" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCtOcDBKgyr-f50SgbMErFkQ" class="text-white"><i class="bi bi-youtube"></i></a>
+      </div>
+      <a href="#" class="btn btn-light rounded-pill ms-3">Exclusive Membership</a>
+    </div>
+  </nav>
+  <section class="hero text-center">
+</section>
+
+<section class="py-5 text-center position-relative" style="background: #fff;">
+
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5">
+    <div class="text-lg-start text-center" style="max-width: 600px;">
+      <h2 class="fw-bold display-6">About <span style="color: #b133ff;">BINI</span> <span>🌸</span></h2>
+      <p class="mb-0 fs-5">
+        Filipino pop phenomenon <strong>BINI</strong> features 8 multi-talented members:
+        <em>Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna</em>, and <em>Sheena</em>.
+      </p>
+      <p class="mt-3 fs-6">
+        The group debuted in 2021 under ABS-CBN’s Star Hunt and has gained millions of fans online and globally. Known for hit songs, synchronized dance moves, and strong vocals, BINI is taking over!
+      </p>
+    </div>
+    <div class="position-relative">
+      <div class="position-absolute top-50 start-50 translate-middle bg-gradient rounded-circle" style="width: 250px; height: 250px; background: radial-gradient(circle at center, #ffc6ff 0%, transparent 70%); z-index: 0;"></div>
+      <img src="img/bini-bg.webp" alt="BINI Group" class="img-fluid rounded shadow" style="max-width: 500px; position: relative; z-index: 1;">
+    </div>
+  </div>
+  <div class="py-5 text-center position-relative"></div>
+  <h3 class="fw-bold mb-4">Pick your <span style="color: #5b2dc5;">BIAS!</span> <i class="bi bi-cursor-fill"></i></h3>
+  <div class="position-absolute top-0 start-50 translate-middle-x opacity-25" style="width: 500px; height: 500px; background: radial-gradient(circle at center, #f3e5f5 0%, transparent 80%); z-index: 0;"></div>
+  <div class="position-relative px-4">
+  <div id="biasScroll" class="d-flex gap-3 flex-nowrap mx-auto"
+       style="width: 100%; max-width: 960px; overflow-x: hidden; scroll-behavior: smooth;">
+
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #91e8d9;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/aiah.jpg" alt="Aiah" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #ffd95e;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/maloi.jpg" alt="maloi" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #3db637;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/gwen.jpg" alt="Gwen" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #c82f2f;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/Colet.jpg" alt="Colet" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #2f43c8;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/stacey.jpg" alt="Stacey" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #b32fc8;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/sheena.jpg" alt="Sheena" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #c82f82;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/mikha.jpg" alt="Mikha" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+        <div class="flip-card" onclick="this.classList.toggle('flip')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" style="background-color: #c82f54;">
+          <img src="img/blooms.png" alt="flower" style="width: 40px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/jhoana.jpg" alt="Jhoana" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-light position-absolute start-0 top-50 translate-middle-y ms-2 shadow"
+          onclick="scrollPrev()" style="z-index: 2;">
+    <i class="bi bi-chevron-left fs-4"></i>
+  </button>
+  <button class="btn btn-light position-absolute end-0 top-50 translate-middle-y me-2 shadow"
+          onclick="scrollNext()" style="z-index: 2;">
+    <i class="bi bi-chevron-right fs-4"></i>
+  </button>
+</div>
+</section>
+
+<script>
+  function scrollNext() {
+    const scrollBox = document.getElementById('biasScroll');
+    scrollBox.scrollBy({ left: 150, behavior: 'smooth' }); 
+  }
+
+  function scrollPrev() {
+    const scrollBox = document.getElementById('biasScroll');
+    scrollBox.scrollBy({ left: -150, behavior: 'smooth' });
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
