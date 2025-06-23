@@ -5,25 +5,14 @@ body {
 }
 
 .hero {
-  position: relative;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.hero .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  border-radius: 20px;
-}
-
-.hero {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
   position: relative;
   color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 .bg-video {
@@ -32,8 +21,8 @@ body {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
   object-fit: cover;
+  z-index: -1;
 }
 
 .overlay {
@@ -42,10 +31,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
+/* Flip Card */
 .flip-card {
   width: 200px;
   height: 250px;
@@ -84,16 +74,17 @@ body {
   background-color: #fff;
 }
 
-
-
+/* About Section */
 .about-bini-section {
-  background-color: transparent; 
-  padding: 5rem 0;
+  background-color: transparent;
+  padding: 5rem 1rem;
   color: #f8f9fa;
+  text-align: center;
 }
 
 .about-bini-section .text-block {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .about-bini-section h2 {
@@ -114,6 +105,7 @@ body {
 
 .about-bini-section .img-glow-wrapper {
   position: relative;
+  margin-top: 2rem;
 }
 
 .about-bini-section .img-glow-wrapper::before {
@@ -132,7 +124,105 @@ body {
 .about-bini-section img {
   position: relative;
   z-index: 1;
-  max-width: 500px;
+  max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+}
+
+.album-details img {
+      max-width: 300px;
+      border-radius: 1rem;
+    }
+
+    .album-info h3 {
+      font-weight: bold;
+    }
+
+    .album-info p {
+      margin: 0.2rem 0;
+    }
+
+    .album-thumbs img {
+      height: 120px;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      transition: transform 0.3s;
+    }
+
+    .album-thumbs img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-more {
+      background-color: #00bcd4;
+      color: white;
+      border-radius: 50px;
+      padding: 0.5rem 1.5rem;
+    }
+
+    .btn-more:hover {
+      background-color: #009daf;
+    }
+
+
+
+@media (max-width: 992px) {
+  .flip-card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .about-bini-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-bini-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .about-bini-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-bini-section p {
+    font-size: 0.95rem;
+  }
+
+  .about-bini-section .img-glow-wrapper::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .flip-card {
+    width: 120px;
+    height: 180px;
+  }
+
+  .about-bini-section {
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .about-bini-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-bini-section .img-glow-wrapper::before {
+    width: 160px;
+    height: 160px;
+  }
 }
